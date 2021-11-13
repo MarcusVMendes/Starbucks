@@ -1,0 +1,41 @@
+:root {
+  --header-cont-height: 80px;
+  
+  --page-margin: 70px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.wrapper {
+  height: 100vh;
+}
+
+#header-container {
+  display: flex;
+  height: var(--header-cont-height);
+  justify-content: space-between;
+}
+
+#header-container img {
+  height: 65px;
+  width: 65px;
+  margin: 15px var(--page-margin);
+}
+
+#initial-page-menu {
+  display: flex;
+  margin: 0 var(--page-margin);
+} 
+
+#initial-page-menu a {
+  text-decoration: none;
+  margin-left: 25px;
+  align-self: flex-end;
+  font-size: 20px;
+  color: black;
+}
