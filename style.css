@@ -1,7 +1,8 @@
 :root {
   --header-cont-height: 80px;
-  
   --page-margin: 70px;
+  --circle-size: 1000px;
+
 }
 
 body {
@@ -37,5 +38,34 @@ body {
   margin-left: 25px;
   align-self: flex-end;
   font-size: 20px;
-  color: black;
+  color: #000;
+}
+
+#init-main-container {
+  display: flex;
+  height: calc(100vh - --header-cont-height);
+}
+
+.left-container {
+  flex: 0.6;
+}
+
+.right-container {
+  flex: 0.4;
+}
+
+.right-container img {
+  z-index: 2;
+  position: absolute;
+}
+
+.semi-circle {
+  background: #017143;
+  border-radius: 100%;
+  position: absolute;
+  right: -450px;
+  bottom: -440px;
+  height: var(--circle-size);
+  width: var(--circle-size);
+  z-index: 1;
 }
